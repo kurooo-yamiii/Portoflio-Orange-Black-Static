@@ -1,0 +1,170 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	int div = 7;
+	int gw = 4;
+	int a1, a2, a3, a4, a5, a6, a7, aa;
+	int b1, b2, b3, b4, b5, b6, b7, ba;
+	int c1, c2, c3, c4, c5, c6, c7, ca;
+	int d1, d2, d3, d4, d5, d6, d7, da;
+	int g;
+	
+	
+	string r;
+	string n;
+	string s;
+	string k;
+	
+	// NAME & SECTION
+	cout<< "Enter Student Name"<<endl;
+	cin>>n;
+	cout<< "Enter Student Class Adviser"<<endl;
+	cin>>s;
+	cout<< "First Grading"<<endl;
+	cout<< ""<<endl;
+	
+	// FIRST GRADING
+	cout<< "Insert 1st Grading English"<<endl;
+	cin>>a1;
+	cout<< "Insert 1st Grading Filipino"<<endl;
+	cin>>a2;
+	cout<< "Insert 1st Grading History"<<endl;
+	cin>>a3;
+	cout<< "Insert 1st Grading Science"<<endl;
+	cin>>a4;
+	cout<< "Insert 1st Grading Math"<<endl;
+	cin>>a5;
+	cout<< "Insert 1st Grading GMRC"<<endl;
+	cin>>a6;
+	cout<< "Insert 1st Grading TLE"<<endl;
+	cin>>a7;
+	cout<< ""<<endl;
+	cout<< ""<<endl;
+	aa = (a1 + a2 + a3 + a4 + a5 + a6 + a7);
+	aa = (aa/ div);
+	
+	// SECOND GRADING
+	cout<< "Second Grading"<<endl;
+	cout<< ""<<endl;
+	cout<< "Insert 2nd Grading English"<<endl;
+	cin>>b1;
+	cout<< "Insert 2nd Grading Filipino"<<endl;
+	cin>>b2;
+	cout<< "Insert 2nd Grading History"<<endl;
+	cin>>b3;
+	cout<< "Insert 2nd Grading Science"<<endl;
+	cin>>b4;
+	cout<< "Insert 2nd Grading Math"<<endl;
+	cin>>b5;
+	cout<< "Insert 2nd Grading GMRC"<<endl;
+	cin>>b6;
+	cout<< "Insert 2nd Grading TLE"<<endl;
+	cin>>b7;
+	cout<< ""<<endl;
+	cout<< ""<<endl;
+	ba = (b1 + b2 + b3 + b4 + b5 + b6 + b7);
+	ba = (ba/ div);
+	
+	// THIRD GRADING
+	cout<< "Third Grading"<<endl;
+	cout<< ""<<endl;
+	cout<< "Insert 3rd Grading English"<<endl;
+	cin>>c1;
+	cout<< "Insert 3rd Grading Filipino"<<endl;
+	cin>>c2;
+	cout<< "Insert 3rd Grading History"<<endl;
+	cin>>c3;
+	cout<< "Insert 3rd Grading Science"<<endl;
+	cin>>c4;
+	cout<< "Insert 3rd Grading Math"<<endl;
+	cin>>c5;
+	cout<< "Insert 3rd Grading GMRC"<<endl;
+	cin>>c6;
+	cout<< "Insert 3rd Grading TLE"<<endl;
+	cin>>c7;
+	cout<< ""<<endl;
+	cout<< ""<<endl;
+	ca = (c1 + c2 + c3 + c4 + c5 + c6 + c7);
+	ca = (ca/ div);
+	
+	// FOURTH GRADING
+	cout<< "Fourth Grading"<<endl;
+	cout<< ""<<endl;
+	cout<< "Insert 4th Grading English"<<endl;
+	cin>>d1;
+	cout<< "Insert 4th Grading Filipino"<<endl;
+	cin>>d2;
+	cout<< "Insert 4th Grading History"<<endl;
+	cin>>d3;
+	cout<< "Insert 4th Grading Science"<<endl;
+	cin>>d4;
+	cout<< "Insert 4th Grading Math"<<endl;
+	cin>>d5;
+	cout<< "Insert 4th Grading GMRC"<<endl;
+	cin>>d6;
+	cout<< "Insert 4th Grading TLE"<<endl;
+	cin>>d7;
+	cout<< ""<<endl;
+	cout<< ""<<endl;
+	
+	da = (d1 + d2 + d3 + d4 + d5 + d6 + d7);
+	da = (da/ div);
+	
+	g = (aa + ba + ca + da);
+	g = (g / gw);
+	
+	if(g >= 74) 
+	{
+		r = "Passed";
+	} 
+	else
+	{
+	r = "Failed";
+	}
+	
+	// GRADING SHEET
+	
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "| Name: "<<n<< " | Class Adviser: " <<s<<" |" <<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "| First Grading"" | Second Grading"" |" " Third Grading"" |"" Fourth Grading"" |"<<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "|  English: " <<a1<<"  |""  English: " <<b1<<"   ""|  English: " <<c1<<"  |""   English: " <<d1<<"  |"<<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "| Filipino: " <<a2<<"  |""  Filipino: " <<b2<<"  ""|  Filipino: " <<c2<<" |""  Filipino: " <<d2<<"  |"<<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "|  History: " <<a3<<"  |""   History: " <<b3<<"  ""|  History: " <<c3<<"  |""   History: " <<d3<<"  |"<<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "|  Science: " <<a4<<"  |""   Science: " <<b4<<"  ""|  Science: " <<c4<<"  |""   Science: " <<d4<<"  |"<<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "|    Math: " <<a5<<"   |""     Math: " <<b5<<"  "" |    Math: " <<c5<<"   |""     Math: " <<d5<<"   |"<<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "|    GMRC: " <<a6<<"   |""     GMRC: " <<b6<<"  "" |    GMRC: " <<c6<<"   |""     GMRC: " <<d6<<"   |"<<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "|    TLE: " <<a7<<"    |""     TLE: " <<b7<<"  ""  |     TLE: " <<c7<<"   |""     TLE: " <<d7<<"    |"<<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "|  Average: " <<aa<<"  |""   Average: " <<ba<<"  ""|   Average: " <<ca<<" |""   Average: " <<da<<"  |"<<endl;
+	cout<< "-------------------------------------------------------------------"<<endl;
+	cout<< "------------------------------------------------"<<endl;
+	cout<< "| General Weight Average: " <<g<<" |"" Remarks: " <<r<<" |"<<endl;
+	cout<< "------------------------------------------------"<<endl;
+	cout<< ""<<endl;
+	cout<< ""<<endl;
+	cout<< "Enter Any Key to Enter New Student"<<endl;
+	cin>>k;
+	cout<< ""<<endl;
+	cout<< ""<<endl;
+	
+	
+}
+
